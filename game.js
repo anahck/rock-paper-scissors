@@ -135,12 +135,12 @@ async function playGame() {
     console.log(`${computer.name}: ${computer.score}`);
 
     if (human.score > computer.score) {
-        console.log("\x1b[32m%s\x1b[0m","You won this game!");
+        console.log("\x1b[32m%s\x1b[0m","You won this game!"); //Green
         totalWins++;
     } else if (human.score < computer.score) {
-        console.log("\x1b[31m%s\x1b[0m","Computer won this game.");
+        console.log("\x1b[31m%s\x1b[0m","Computer won this game."); //Red
     } else {
-        console.log("\x1b[33m%s\x1b[0m","It's a tie!");
+        console.log("\x1b[33m%s\x1b[0m","It's a tie!"); //Yellow
     }
 
     console.log(`\n🏆 Total Wins: ${totalWins}`);
